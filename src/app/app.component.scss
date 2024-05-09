@@ -1,0 +1,10 @@
+.nav-item {
+    min-width: 120px;
+    text-align: center;
+
+    .active {
+        background-color: red !important;
+        border-radius: 4px;
+        color: #fff !important;
+    }
+}

@@ -1,0 +1,29 @@
+<div class="card mt-5 mb-2 p-2">
+    Danh Sách Sản Phẩm
+</div>
+
+<div class="p-3 rounded bg-white">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">thumbnail</th>
+                    <th scope="col">name</th>
+                    <th scope="col">price</th>
+                    <th scope="col">sale price</th>
+                    <th scope="col">code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listProducts">
+                    <td scope="row"> <img src="{{item.img}}" alt="" style="width: 60px; height: 60px;"> </td>
+                    <td scope="row">{{item.name}}</td>
+                    <td scope="row">{{item.price}}</td>
+                    <td scope="row">{{item.sale_price}}</td>
+                    <td scope="row">{{item.code}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
